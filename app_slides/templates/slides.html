@@ -1,0 +1,14 @@
+<h1>Generated Slides</h1>
+<ul>
+    {% for slide in slides %}
+    <li>
+        <h2>{{ slide.title }}</h2>
+        <p>{{ slide.content }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+{% if visualization %}
+<h1>Visualization</h1>
+<div>{{ visualization|safe }}</div>
+{% endif %}

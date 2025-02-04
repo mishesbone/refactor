@@ -1,0 +1,8 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file">
+    <button type="submit">Upload and Generate Slides</button>
+</form>
+{% if error %}
+<p style="color: red;">{{ error }}</p>
+{% endif %}
