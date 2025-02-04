@@ -23,3 +23,4 @@ def upload_file(request):
         except Exception as e:
             return render(request, 'upload.html', {'error': str(e)})
     return render(request, 'upload.html')
+
