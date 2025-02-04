@@ -1,0 +1,6 @@
+Django==4.2
+openai
+PyPDF2
+python-docx
+pandas
+plotly
